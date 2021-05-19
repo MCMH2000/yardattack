@@ -37,10 +37,10 @@ arguments:
 
 examples:
   ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s -30
-                        Will capture a OOK signal over -30dBi on 868.29MHz
+                        Will capture an OOK signal over -30dBi on 868.29MHz
                         and saves it in captures/garagedoor.cfg
   ./yardattack -r garagedoor
                         Will replay the captured signal from before with all parameters
   ./yardattack -r garagedoor -f 433290000
-                        or on another frequency than captured [NOT IMPLEMENTED YET]
+                        or with other parameters than captured [NOT IMPLEMENTED YET]
 ```
