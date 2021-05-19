@@ -18,7 +18,7 @@ usage: yardattack [-h] [-c CAPTURE] [-r REPLAY] [-f FREQUENCY] [-m MODULATION]
 
 Capture and Replay signals...
 
-optional arguments:
+arguments:
   -h, --help            show this help message and exit
   -c CAPTURE, --capture CAPTURE
                         Capture received code in file
@@ -34,4 +34,12 @@ optional arguments:
                         -110
   -e EXTRACT, --extract EXTRACT
                         Extract signal from noise. Default: True
+
+examples:
+  ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s -30
+                        Will capture a OOK signal over -30dBi on 868.29MHz and saves it in captures/garagedoor.cfg
+  ./yardattack -r garagedoor
+                        Will replay the captured signal from before with all parameters
+  ./yardattack -r garagedoor -f 433290000
+                        or on another frequency than captured
 ```
