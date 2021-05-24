@@ -36,11 +36,11 @@ arguments:
                         Extract signal from noise. Default: True
 
 examples:
-  ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s -30
-                        Will capture an OOK signal over -30dBi on 868.29MHz
+  ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s 30
+                        Will capture an OOK signal over RSSI 30 on 868.29MHz
                         and saves it in captures/garagedoor.cfg
   ./yardattack -r garagedoor
-                        Will replay the captured signal from before with all parameters
+                        Will replay the captured signal from before with the same parameters
   ./yardattack -r garagedoor -f 433290000
                         or with other parameters than captured [NOT IMPLEMENTED YET]
 ```
