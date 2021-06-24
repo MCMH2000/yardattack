@@ -1,5 +1,5 @@
 # Yardattack
-Convenient tool for the YARD Stick One or HackRF
+Convenient tool for the YARD Stick One or HackRF [NOT YET TESTED WITH HACKRF]
 
 This Tool is based on Console Cowboys RFCrack tool https://github.com/cclabsInc/RFCrack
 ```
@@ -39,6 +39,7 @@ examples:
   ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s 30
                         Will capture an OOK signal over RSSI 30 on 868.29MHz
                         and saves it in captures/garagedoor.cfg
+                        [ISSUES WITH RSSI THRESHOLD, RECOMMENDED TO NOT USE IT YET]
   ./yardattack -r garagedoor
                         Will replay the captured signal from before with the same parameters
   ./yardattack -r garagedoor -f 433290000
