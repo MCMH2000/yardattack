@@ -1,5 +1,5 @@
 # Yardattack
-Convenient tool for the YARD Stick One or HackRF [NOT YET TESTED WITH HACKRF]
+Convenient tool for the YARD Stick One
 
 This Tool is based on Console Cowboys RFCrack tool https://github.com/cclabsInc/RFCrack
 ```
