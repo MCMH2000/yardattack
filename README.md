@@ -37,7 +37,7 @@ arguments:
 
 examples:
   ./yardattack -c garagedoor -f 868290000 -b 9600 -m MOD_ASK_OOK -s 30
-                        Will capture an OOK signal over RSSI 30 on 868.29MHz
+                        Will capture an OOK signal above RSSI 30 on 868.29MHz
                         and saves it in captures/garagedoor.cfg
                         [ISSUES WITH RSSI THRESHOLD, RECOMMENDED TO NOT USE IT YET]
   ./yardattack -r garagedoor
